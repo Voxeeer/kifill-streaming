@@ -16,23 +16,23 @@ client.on('message', message => {
   } else  
   if (message.content.startsWith(adminprefix + 'setw')) {
   client.user.setActivity(argresult, {type:'WATCHING'});
-      message.channel.send(`تم تغيير حالة المشاهدة الى   ${argresult}**`)
+      message.channel.send(`** ✅ Watching :  ${argresult}**`)
   } else 
   if (message.content.startsWith(adminprefix + 'setl')) {
   client.user.setActivity(argresult , {type:'LISTENING'});
-      message.channel.send(`تم تغيير حالة الاستماع الى   ${argresult}**`)
+      message.channel.send(`** ✅ Listening :  ${argresult}**`)
   } else 
   if (message.content.startsWith(adminprefix + 'sets')) {
     client.user.setGame(argresult, "https://www.twitch.tv/One");
-      message.channel.send(`✅ ${argresult}**`)
+      message.channel.send(`** ✅ ${argresult}**`)
   }
   if (message.content.startsWith(adminprefix + 'setname')) {
   client.user.setUsername(argresult).then
-      message.channel.send(`Changing The Name To ..**${argresult}** `)
+      message.channel.send(`**Changing The Name To ..**${argresult}** `)
 } else
 if (message.content.startsWith(adminprefix + 'setavatar')) {
   client.user.setAvatar(argresult);
-    message.channel.send(`Changing The Avatar To :**${argresult}** `);
+    message.channel.send(`**Changing The Avatar To :**${argresult}** `);
 }
 });
 
